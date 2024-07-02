@@ -41,15 +41,18 @@ Run the application using Gradle:
 
 Here's a roadmap for enhancing the Movies API:
 
-1. Increase Test Coverage
-   * Expand unit test coverage.
-
-2. Integration Tests
-   * Introduce more integration tests to ensure seamless collaboration between modules.
-
-3. Add Diagrams
-   * Create visual architecture diagrams to illustrate the system's structure.
-   * Use sequence diagrams to showcase the flow of operations.
-
-4. REST Services Validations
-   * Strengthen input validations for REST services.
+1. Code Coverage
+   * Add more unit tests and the Jacoco plugin to verify code coverage every time changes are made, ensuring a minimum percentage of code is covered.
+   * Reason: Requires additional time to write more tests and to set up and integrate Jacoco into the existing build process.
+2. Asynchronous Processing
+   * Depending on the requirement, use WebFlux or another library to handle asynchronous flows for better performance and scalability.
+   * Reason: Current requirements do not demand high concurrency or asynchronous processing.
+3. Security 
+   * Enhance API security using Spring Security. 
+   * Reason: The API is currently in a development environment with restricted access, making immediate security enhancements unnecessary. 
+4. Visual Documentation 
+   * Create visual architecture diagrams to illustrate the system's structure, providing a clear overview of the system components and their interactions.
+   * Reason: Requires additional tools and time to create comprehensive diagrams.
+5. Sequence Diagrams
+   * Use sequence diagrams to showcase the flow of operations, helping to understand the interactions between different parts of the system and improving communication among team members.
+   * Reason: Similar to visual architecture diagrams, this requires additional time and resources to produce.
